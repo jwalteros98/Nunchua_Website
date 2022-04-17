@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nunchuah Webs Site Landing Page</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="logo.png" class="logo"></a>
+            <div class="toggle" onclick="toggleMenu()"></div>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's new</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2> Chocolate 100% Artesanal </h2>
+                <p>
+                  Somos una empresa familiar comprometida con el cultivo de cacao y transformación del gran en productos 
+                  de alta calidad, sabor y aroma, manteniendo una propuesta de valor diferenciada, cumpliendo con acciones
+                   social y ambientalmente responsables y garantizando un comercio justo en nuestros cultivadores. </p> 
+                  <p> 
+                      
+                  </p>
+                   <p> Al 2022 Nunchuah será la empresa casanareña más reconocida en el mercado regional y nacional, contará
+                    con una cuota de mercado exportador que permitirá fortalecer y ampliar las áreas de siembra, generando
+                     a sus socios una rentabilidad económica favorable y a los grupos de interés un impacto positivo. </p>
+                    
+                     <a href="#"> 
+                       Conoce nuestros productos 
+                        <div class="liquid"></div>
+                     </a> 
+                                
+            </div>
+
+            <div class="imgBox">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="cocacola1.png"></div>
+                      <div class="swiper-slide"><img src="cocacola2.png"></div>
+                      <div class="swiper-slide"><img src="cocacola3.png"></div>
+                      <div class="swiper-slide"><img src="cocacola4.png"></div>
+                      <div class="swiper-slide"><img src="cocacola5.png"></div>
+                      <div class="swiper-slide"><img src="cocacola6.png"></div>
+                      
+                    </div>
+            </div>
+
+
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+            <li><a href="#"><img src="instagram.png"></a></li>
+        </ul>   
+    </section>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 200,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          loop: true,
+        });
+
+        function toggleMenu(){
+          const menuToggle = document.querySelector('.toggle');
+          const navigation = document.querySelector('.navigation')
+          menuToggle.classList.toggle('active')
+          navigation.classList.toggle('active')
+        }
+
+
+      </script>
+
+</body>
+</html>
